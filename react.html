@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>React logo</title>
+    <title>React Logo</title>
     <style>
         body {
             margin: 5;
@@ -30,6 +30,13 @@
             height: 256px;
             max-width: 256px;
             margin: 0.5rem 0;
+            opacity: .75;
+            transition: opacity .5s ease-in-out;
+        }
+
+        svg:hover,
+        canvas:hover {
+            opacity: 1;
         }
 
         footer {
@@ -61,6 +68,21 @@
             justify-content: space-between;
             align-items: center;
             padding: 1rem;
+        }
+
+        @media screen and (prefers-color-scheme: light) {
+            body {
+                background-color: #edf2f5;
+                color: #434747;
+            }
+
+            a {
+                color: #595969;
+            }
+
+            footer {
+                background: #acdcfa;
+            }
         }
     </style>
 
