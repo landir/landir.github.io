@@ -1,17 +1,12 @@
 <!DOCTYPE html>
-<!-- The DOCTYPE declaration above will set the     -->
-<!-- browser's rendering engine into                -->
-<!-- "Standards Mode". Replacing this declaration   -->
-<!-- with a "Quirks Mode" doctype is not supported. -->
-
 <html lang="en">
   <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link type="text/css" rel="stylesheet" href="Landir.css">
     <title>Web Application Landir Starter Project</title>
     <script type="text/javascript" language="javascript" src="landir/landir.nocache.js"></script>
   <script type="text/javascript">
-
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-27590491-1']);
   _gaq.push(['_setDomainName', 'landir.com.br']);
@@ -25,38 +20,76 @@
 
   </script>
   </head>
-  <body>
-  	<noscript>
-      <div style="width: 22em; position: absolute; left: 50%; margin-left: -11em; color: red; background-color: white; border: 1px solid red; padding: 4px; font-family: sans-serif">
-        Your web browser must have JavaScript enabled
-        in order for this application to display correctly.
-      </div>
-    </noscript>
 
-    <h1>Landir</h1>
-    Since 2003 writing Hello World<br/>
-    Home: <a href="https://www.landir.com.br">www.landir.com.br</a><br/>
-    Test Page: <a href="https://www.landir.com.br/test.html">www.landir.com.br/test.html</a><br/>
-    React Logo: <a href="https://www.landir.com.br/react.html">www.landir.com.br/react.html</a><br/>
+  <body>    
+    <section>
+      <article>
+        <header>
+          <h1>Landir</h1>
+        </header>
+        <p>Since 2003 writing Hello World<p/>
+        <p>
+          <nav>
+            <a href="https://www.landir.com.br">Home</a>
+          </nav>
+        </p>
+      </article>
+    </section>
+
+    <section>
+      <article>
+        <header>
+          <h1>Profiles</h1>
+        </header>
+        <p>
+          <nav>
+            <a href="https://www.linkedin.com/in/landir/">LinkedIn</a>
+            <a href="https://github.com/landir">GitHub</a>
+            <a href="https://twitter.com/landir">Twitter</a>
+            <a href="https://github.com/ansible-used-roles">GitHub Ansible</a>
+            <a href="https://github.com/LucasdaCostaSilva">React Project</a>
+          </nav>
+        </p>
+      </article>
+    </section>
     
-    <br/>
-    <h2>Profiles</h2>
-    <a href="https://www.linkedin.com/in/landir/">LinkedIn</a><br/>
-    <a href="https://github.com/landir">GitHub</a><br/>
+    <section>
+      <article>
+        <header>
+          <h1>More pages</h1>
+        </header>
+        <p>
+          <nav>
+            <a href="https://www.landir.com.br/test.html">Test Page</a>
+            <a href="https://www.landir.com.br/react.html">React Logo</a>
+          </nav>
+        </p>
+      </article>
+    </section>
+
+    <details>
+      <summary><b>🛠️ Languages and Tools</b></summary>
+      <br/>
+      <p align="left">
+      <ul>
+        <li>Java</li>
+        <li>Spring Boot</li>
+        <li>JavaScript</li>
+        <li>React</li>
+      </ul>
+      </p>
+    </details>
     
-<div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Person">
- Meu nome é <span property="v:name">Lucas Silva</span>,
-   mas todos me chamam de <span property="v:nickname">Landir</span>.
-   Esta é a minha página inicial:
-  <a href="http://www.landir.com.br" rel="v:url">www.landir.com.br</a>.
-   Sou do 
-   <span rel="v:address">
-      <span typeof="v:Address">
-         <span property="v:locality">Brasil</span>
+    <footer>
+      <div xmlns:v="http://rdf.data-vocabulary.org/#" typeof="v:Person">
+      Meu nome é <span property="v:name">Lucas Silva</span>, mas todos me chamam de <span property="v:nickname">Landir</span>.
+      Esta é a minha página inicial: <a href="http://www.landir.com.br" rel="v:url">www.landir.com.br</a>. Sou do 
+      <span rel="v:address">
+        <span typeof="v:Address"><span property="v:locality">Brasil</span></span>
       </span>
-   </span>
-   e trabalho como <span property="v:title">Developer</span>
-</div>
+      e trabalho como <span property="v:title">Developer</span>
+      </div>
+    </footer>
 
   </body>
 </html>
